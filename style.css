@@ -272,8 +272,8 @@ footer {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     grid-column: 4/5;
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
     -webkit-transition: opacity 500ms ease-out 250ms, -webkit-transform 1s ease 100ms;
     transition: opacity 500ms ease-out 250ms, -webkit-transform 1s ease 100ms;
     transition: transform 1s ease 100ms, opacity 500ms ease-out 250ms;
