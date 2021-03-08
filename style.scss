@@ -29,16 +29,19 @@ body {
 .container {
     width: calc(min(90%, 1124px));
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 4rem 0;
 }
 
 .card {
+    min-width: 300px;
     padding: 2rem;
     border-radius: 10px;
     line-height: 1.4;
     box-shadow: 20px 18px 35px -8px rgba(0, 0, 0, 0.144);
+    flex: 1 1 48%;
     &--1 {
         position: relative;
         background-color: var(--moderate-violet);
@@ -147,12 +150,13 @@ footer {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1224px) {
     .container {
         display: grid;
         grid-template: repeat(2, 1fr)/repeat(4, 1fr);
     }
     .card {
+        max-width: inherit;
         opacity: 0;
         &--1 {
             grid-row: 1/2;
@@ -168,7 +172,7 @@ footer {
         }
         &--3 {
             grid-row: 2/3;
-            grid-column: 1in
+            grid-column: 1/2;
             transform: translateY(200px);
             transition: transform 1s ease 350ms, opacity 500ms ease-in 250ms;
         }
